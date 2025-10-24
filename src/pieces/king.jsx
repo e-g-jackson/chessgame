@@ -1,9 +1,10 @@
 import Piece from './piece';
 
 class King extends Piece{
-    constructor(props){
-        super(props);
+    constructor(type, color, position){
+        super(type, color, position);
         this.value = 10;
+        this.isInCheck = false;
         if(this.color == "white"){
             this.symbol = "\u2654";
         } else {

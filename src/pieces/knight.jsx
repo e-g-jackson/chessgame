@@ -1,8 +1,8 @@
 import Piece from './piece';
 
 class Knight extends Piece{
-    constructor(props){
-        super(props);
+    constructor(type, color, position){
+        super(type, color, position);
         this.value = 3;
         if(this.color == "white"){
             this.symbol = "\u2658";

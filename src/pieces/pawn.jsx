@@ -2,8 +2,8 @@ import Piece from './piece';
 // import React from 'react'
 
 class Pawn extends Piece {
-    constructor(props){
-        super(props);
+    constructor(type, color, position){
+        super(type, color, position);
         this.value = 1;
         if(this.color == 'white'){
             this.symbol = "\u2659";
