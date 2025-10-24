@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.chessBoard{
+  width: 100%;
+}
+
+.darkSquare{
+  background-color: #b58863; /* Dark wood color */
+}
+
+.lightSquare{
+  background-color: #f0d9b5; /* Light wood color */
+}
+
+.square{
+  width: 75px;
+  height: 75px;
+}
