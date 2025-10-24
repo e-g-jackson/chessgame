@@ -1,16 +1,17 @@
 import Piece from './piece';
 
 class Rook extends Piece{
-    constructor(type, color, position){
-        super();
+    constructor(props){
+        super(props);
         this.value = 3;
-        if(color == "white"){
+        if(this.color == "white"){
             this.symbol = "\u2656";
         } else {
             this.symbol = "\u265C";
         }
     }
     render(){
+        console.log("~Rook Created~");
         return(
             <div>{this.symbol}</div>
         )

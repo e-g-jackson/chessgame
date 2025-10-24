@@ -11,15 +11,29 @@ import King from './pieces/king';
 
 let createPiece = (type, color, position) => {
     let piece;
+    // console.log(`createPiece:\ntype: ${type}\ncolor: ${color}\nposition:${position}`)
 
     switch(type){
-        case "pawn": piece = new Pawn(type, color, position);
-        case "rook": piece = new Rook(type, color, position);
-        case "knight": piece = new Knight(type, color, position);
-        case "bishop": piece = new Bishop(type, color, position);
-        case "queen": piece = new Queen(type, color, position);
-        case "king": piece = new King(type, color, position);
+        case "pawn": 
+            piece = new Pawn(type, color, position);
+            break;
+        case "rook": 
+            piece = new Rook(type, color, position);
+            break;
+        case "knight": 
+            piece = new Knight(type, color, position);
+            break;
+        case "bishop": 
+            piece = new Bishop(type, color, position);
+            break;
+        case "queen": 
+            piece = new Queen(type, color, position);
+            break;
+        case "king": 
+            piece = new King(type, color, position);
+            break;
     }
+    // console.log(`Piece in createPiece:\n${piece}`)
     
     return piece;
 };

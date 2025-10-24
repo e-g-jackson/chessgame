@@ -1,6 +1,7 @@
 /**
  * Called from ./main.jsx
  */
+import {useEffect} from 'react';
 import initialize from './initialize';
 
 let createChessBoard = () =>{
@@ -22,8 +23,11 @@ let createChessBoard = () =>{
         board.push(row);
     };
 
-    // places pieces in their starting places on the board
+    // // places pieces in their starting places on the board
     initialize(board);
+    // useEffect(()=>{
+    //     initialize(board);
+    // }, [])
     
     return (
         <table key = 'chessboard'>

@@ -8,17 +8,12 @@ class Piece extends React.Component {
     color;
     position;
 
-    // constructor(type, color, position){
-    //     super(props);
-    //     this.type = type;
-    //     this.color = color;
-    //     this.position = position;
-    // }
-    
-    piece(type, color, position) {
+    constructor(type, color, position) {
+        super();
         this.type = type;
         this.color = color;
         this.position = position;
+        console.log(`New Piece created:\ntype: ${type}\ncolor: ${color}\nposition:${position}`)
     };
 }
 
