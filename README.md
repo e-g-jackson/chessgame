@@ -1,3 +1,9 @@
+# A CHESS GAME
+
+You know it. You love it. It's Chess!
+[@e-g-jackson](https://github.io/e-g-jackson)
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
