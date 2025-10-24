@@ -14,6 +14,7 @@ class Piece extends React.Component {
     //     this.color = color;
     //     this.position = position;
     // }
+    
     piece(type, color, position) {
         this.type = type;
         this.color = color;

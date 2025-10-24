@@ -29,11 +29,17 @@ let createChessBoard = () =>{
         <table key = 'chessboard'>
             <tbody key = 'chessboardTable'>
                 {board.map((row) => {
-                    // console.log(row);
+                    // console.log("ROW.KEY")
+                    // console.log(row.key);
+                    // console.log(row)
                     return(
-                        <tr key = {row.key}>
+                        //FIX ME - Math.random() is generating a unique key, but needs to be improved.
+                        <tr key = {`row${Math.random()*100}`}>
                             {row.map(
                                 (square) => {
+                                    // console.log("SQUARE.KEY");
+                                    // console.log(square.key);
+                                    // console.log(square);
                                     return(<td id = {square.key} key = {square.key}>{square}</td>)   
                                 }
                             )}
