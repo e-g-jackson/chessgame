@@ -11,7 +11,7 @@ class Rook extends Piece{
         }
     }
     render(){
-        console.log("~Rook Created~");
+        // console.log("~Rook Created~");
         return(
             <div>{this.symbol}</div>
         )

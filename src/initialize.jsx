@@ -1,5 +1,5 @@
 /**
- * Called in createChessBoard
+ * Called in App.jsx
  */
 
 import createPiece from './createPiece';

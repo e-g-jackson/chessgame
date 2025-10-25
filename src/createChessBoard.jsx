@@ -1,13 +1,52 @@
 /**
  * Called from ./main.jsx
  */
-import {useEffect} from 'react';
-import initialize from './initialize';
 
 let createChessBoard = () =>{
     
     console.log("createChessBoard is running!")
     let board = []
+    
+    /**
+     * Generates a key for each row.
+     */
+    let rowCounter = 0;
+    let rowKeyAssignment = () => {
+        switch(rowCounter){
+            case 0:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowA');
+            case 1:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowB');
+            case 2:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowC');
+            case 3:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowD');
+            case 4:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowE');
+            case 5:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowF');
+            case 6:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowG');
+            case 7:
+                console.log(`counter = ${rowCounter}`)
+                rowCounter++;
+                return('rowH');
+        }
+    }
 
     for (let i = 7; i >= 0; i--){
         let row = [];
@@ -23,22 +62,12 @@ let createChessBoard = () =>{
         board.push(row);
     };
 
-    // // places pieces in their starting places on the board
-    initialize(board);
-    // useEffect(()=>{
-    //     initialize(board);
-    // }, [])
-    
     return (
         <table key = 'chessboard'>
             <tbody key = 'chessboardTable'>
                 {board.map((row) => {
-                    // console.log("ROW.KEY")
-                    // console.log(row.key);
-                    // console.log(row)
                     return(
-                        //FIX ME - Math.random() is generating a unique key, but needs to be improved.
-                        <tr key = {`row${Math.random()*100}`}>
+                        <tr key = {`${rowKeyAssignment()}`}>
                             {row.map(
                                 (square) => {
                                     // console.log("SQUARE.KEY");

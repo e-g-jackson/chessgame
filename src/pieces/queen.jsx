@@ -11,7 +11,7 @@ class Queen extends Piece{
         }
     }
     render(){
-        console.log("~Queen Created~");
+        // console.log("~Queen Created~");
         return(
             <div>{this.symbol}</div>
         )

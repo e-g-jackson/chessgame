@@ -11,7 +11,7 @@ import King from './pieces/king';
 
 let createPiece = (type, color, position) => {
     let piece;
-    console.log(`createPiece:\ntype: ${type}\ncolor: ${color}\nposition:${position}`)
+    // console.log(`createPiece:\ntype: ${type}\ncolor: ${color}\nposition:${position}`)
 
     switch(type){
         case "pawn": 

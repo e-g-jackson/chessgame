@@ -13,7 +13,7 @@ class Piece extends React.Component {
         this.type = type;
         this.color = color;
         this.position = position;
-        console.log(`New Piece created:\ntype: ${type}\ncolor: ${color}\nposition:${position}`)
+        // console.log(`New Piece created:\ntype: ${type}\ncolor: ${color}\nposition:${position}`)
     };
 }
 

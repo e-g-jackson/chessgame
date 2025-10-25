@@ -1,5 +1,6 @@
 import Piece from './piece';
-// import React from 'react'
+// import ReactDOM from 'react-dom/client'
+import { useRef } from 'react'
 
 class Pawn extends Piece {
     constructor(type, color, position){
@@ -25,13 +26,20 @@ class Pawn extends Piece {
             ];
         }
     }
+    // targetDiv = () => {
+    //     const targetSquare = document.getElementById(`${this.position}`);
+    //     const root = ReactDOM.createRoot(targetSquare);
+    //     console.log(targetSquare);
+    //     root.render(
+    //         <React.StrictMode>
+    //             <p key = {this.position}>{this.symbol}</p>
+    //         </React.StrictMode>
+    //     )
+    // }
 
     render(){
-        console.log("~Pawn Created~");
-        // console.log(this);
-        // let targetSquare = document.getElementById(this.position);
-        // console.log(this.position);
-        // console.log(targetSquare);
+        // console.log("~Pawn Created~");
+
         return(
             <p key = {this.position}>{this.symbol}</p>
         )

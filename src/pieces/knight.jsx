@@ -11,7 +11,7 @@ class Knight extends Piece{
         }
     }
     render(){
-        console.log("~Knight Created~");
+        // console.log("~Knight Created~");
         return(
             <div>{this.symbol}</div>
         )

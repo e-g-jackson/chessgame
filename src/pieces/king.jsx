@@ -12,7 +12,7 @@ class King extends Piece{
         }
     }
     render(){
-        console.log("~King Created~");
+        // console.log("~King Created~");
         return(
             <div>{this.symbol}</div>
         )

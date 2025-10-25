@@ -11,7 +11,7 @@ class Bishop extends Piece{
         }
     }
     render(){
-        console.log("~Bishop Created~");
+        // console.log("~Bishop Created~");
         return(
             <div>{this.symbol}</div>
         )
